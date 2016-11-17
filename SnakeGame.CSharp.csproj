@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\ManagerScript.cs" />
     <Compile Include="Assets\Script\SnakeScript.cs" />
+    <Compile Include="Assets\Script\TerrainPerlinNoise.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
