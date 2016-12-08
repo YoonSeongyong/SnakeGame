@@ -46,8 +46,8 @@ public class ManagerScript : MonoBehaviour
     {
         snakePos.x += dir.x*0.1f;
         snakePos.y += dir.y*0.1f;
+        snakePos = new Vector2(Mathf.Clamp(snakePos.x, camWidth.x, camWidth.y), Mathf.Clamp(snakePos.y, camHeight.x, camHeight.y));
         snakeObj.transform.position = snakePos;
-        snakeObj.transform.position = new Vector2(Mathf.Clamp(snakeObj.transform.position.x, camWidth.x, camWidth.y), Mathf.Clamp(snakeObj.transform.position.y, camHeight.x, camHeight.y));
         //snakeObj.transform.Translate(new Vector3(scl, 0, 0));
 
     }
