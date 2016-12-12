@@ -12,4 +12,9 @@ public class SnakeScript : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        //ManagerScript.
+    }
 }
